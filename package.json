@@ -1,0 +1,22 @@
+{
+  "name": "desi-hub-telegram-bridge",
+  "version": "1.0.0",
+  "description": "Telegram bot that bridges the Desi Hub WordPress site with a Telegram bot: broadcasts new posts, sells membership access, issues self-destructing single-use VIP invite links, and auto-kicks expired members.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "telegraf": "^4.16.3",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.0",
+    "node-cron": "^3.0.3",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5"
+  }
+}
